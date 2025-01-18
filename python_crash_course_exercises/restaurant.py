@@ -2,8 +2,10 @@
     It is meant to practice the import of classes from a module.
 """
 
+
 class Restaurant:
     """ Simple model of a restaurant """
+
     def __init__(self, name, cuisine_type):
         self.name = name
         self.cuisine_type = cuisine_type
@@ -30,6 +32,7 @@ class Restaurant:
 
 class IcecreamStand(Restaurant):
     """ Simple model of an ice cream stand, a kind of restaurant """
+
     def __init__(self, name, cuisine_type):
         super().__init__(name, cuisine_type)
         self.flavors = ['strawberry', 'vanilla']
@@ -40,7 +43,7 @@ class IcecreamStand(Restaurant):
         for flavor in self.flavors:
             print(flavor, end=', ')
         print()
-        
+
     def add_flavors(self, flavors_list):
         """ Adds more flavors to the list """
         for flavor in flavors_list:

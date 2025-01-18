@@ -9,6 +9,6 @@ class Privileges:
 
     def show_privileges(self):
         """ Lists all the privileges """
-        for privilege in self.privileges:
-            print("   >",privilege)
 
+        for privilege in self.privileges:
+            print("   >", privilege)

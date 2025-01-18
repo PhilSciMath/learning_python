@@ -1,8 +1,9 @@
 """ Contains the User only """
-            
+
 
 class User:
     """ A simple model of a user """
+
     def __init__(self, first_name, last_name, age, function):
         self.first_name = first_name
         self.last_name = last_name
@@ -27,4 +28,3 @@ class User:
     def gret_user(self):
         """ Prints a message to the user """
         print(f"Hello, {self.first_name.title()}!")
-        
